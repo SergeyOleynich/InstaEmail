@@ -21,6 +21,7 @@
 		C396CFC01998C41E000C9190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396CFA21998C41E000C9190 /* UIKit.framework */; };
 		C396CFC81998C41E000C9190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C396CFC61998C41E000C9190 /* InfoPlist.strings */; };
 		C396CFCA1998C41E000C9190 /* InstaEmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C396CFC91998C41E000C9190 /* InstaEmailTests.m */; };
+		C396CFD41998C899000C9190 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396CFD31998C899000C9190 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C396CFC51998C41E000C9190 /* InstaEmailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaEmailTests-Info.plist"; sourceTree = "<group>"; };
 		C396CFC71998C41E000C9190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C396CFC91998C41E000C9190 /* InstaEmailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaEmailTests.m; sourceTree = "<group>"; };
+		C396CFD31998C899000C9190 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C396CFD41998C899000C9190 /* MessageUI.framework in Frameworks */,
 				C396CFA11998C41E000C9190 /* CoreGraphics.framework in Frameworks */,
 				C396CFA31998C41E000C9190 /* UIKit.framework in Frameworks */,
 				C396CF9F1998C41E000C9190 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		C396CF9D1998C41D000C9190 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C396CFD31998C899000C9190 /* MessageUI.framework */,
 				C396CF9E1998C41E000C9190 /* Foundation.framework */,
 				C396CFA01998C41E000C9190 /* CoreGraphics.framework */,
 				C396CFA21998C41E000C9190 /* UIKit.framework */,
