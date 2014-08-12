@@ -14,10 +14,13 @@
     UIPickerView *emailPicker_;
     NSArray *activities_;
     NSArray *feelings_;
+    UITextField *notesFiled_;
 }
 
-@property (strong, nonatomic) IBOutlet UIPickerView *emailPicker;
+@property (nonatomic, retain) IBOutlet UIPickerView *emailPicker;
+@property (nonatomic, retain) IBOutlet UITextField *notesField;
 
 -(IBAction)sendButtonTapped:(id)sender;
+-(IBAction)textFieldDoneEditing:(id)sender;
 
 @end

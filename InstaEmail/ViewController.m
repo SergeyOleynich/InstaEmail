@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-@synthesize emailPicker = emailPicker_;
+@synthesize emailPicker = emailPicker_, notesField = notesFiled_;
 
 - (void)viewDidLoad
 {
@@ -73,7 +73,8 @@
 
 -(IBAction)sendButtonTapped:(id)sender
 {
-    NSString *theMessage = [NSString stringWithFormat:@"I'm %@ and feeling %@ about it.",
+    NSString *theMessage = [NSString stringWithFormat:@"%@ I'm %@ and feeling %@ about it.",
+                            notesFiled_.text ? notesFiled_.text : @"",
                             [activities_ objectAtIndex:[emailPicker_ selectedRowInComponent:0]],
                             [feelings_ objectAtIndex:[emailPicker_ selectedRowInComponent:1]]];
     NSLog(@"%@",theMessage);
@@ -98,6 +99,11 @@
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+-(IBAction)textFieldDoneEditing:(id)sender
+{
+    [sender resignFirstResponder];
 }
      
 @end
